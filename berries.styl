@@ -1,0 +1,64 @@
+// ---------------------
+// Berries
+// CSS Foundation for Waffle based projects
+// March 2015
+// ---------------------
+
+// Inspired by Jayden Seric's article on CSS foundation vs resetting
+// http://jaydenseric.com/blog/forget-normalize-or-resets-lay-your-own-css-foundation
+// Please select only the elements that are suitable for your project
+// Copy and paste them in a foundation.styl file and then import them
+
+html
+  // Prevent browser to inflate fonts size on mobile
+  -ms-text-size-adjust 100%
+  -webkit-text-size-adjust 100%
+  // Better font rendering
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+
+// Note: ordered and unordered lists are resetted by the framework
+h1
+h2
+h3
+h4
+p
+blockquote
+figure
+  margin 0
+  padding 0
+
+// Headers inherit the size from the parent element
+h1
+h2
+h3
+h4
+  font-size inherit
+
+a
+  text-decoration none
+  color inherit
+
+  &:active
+  &:hover
+    outline 0
+
+// Images are responsive, width matches the fluid container
+img
+  max-width 100%
+  height auto
+  border 0
+
+iframe
+  border 0
+
+// Tables
+  table
+    border-collapse collapse
+    border-spacing 0
+
+
+
+
+
+
